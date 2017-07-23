@@ -50,9 +50,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 	</scm>
 
 	<modules>
-		<!-- TODO
 		<module>book</module>
-		-->
 		<module>parent</module>
 		<module>parent/book</module>
 	</modules>
