@@ -54,8 +54,6 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 		<module>book</module>
 		-->
 		<module>parent</module>
-		<!-- TODO
 		<module>parent/book</module>
-		-->
 	</modules>
 </project>
