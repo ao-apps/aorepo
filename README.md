@@ -23,7 +23,7 @@ Aggregator POM for all [AORepo](https://aorepo.org/) packages.
 ## Project Links
 * [Project Home](https://aorepo.org/)
 * [Changelog](https://aorepo.org/changelog)
-* [Maven Repository](https://aorepo.org/maven2/org/aorepo/aorepo/)
+* [Maven Repository](https://aorepo.org/maven2)
 * [GitHub](https://github.com/aoindustries/aorepo)
 
 ## Modules
