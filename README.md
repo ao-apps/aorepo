@@ -25,7 +25,7 @@ Aggregator POM for all [AORepo](https://aorepo.org/) packages.
 * [Changelog](https://aorepo.org/changelog)
 * [CentOS 5 Repository](https://aorepo.org/centos/5/i686,x86_64/)
 * [CentOS 7 Repository](https://aorepo.org/centos/7/x86_64/)
-* [Maven Repository](https://aorepo.org/maven2)
+* [Maven Repository](https://aorepo.org/maven2/)
 * [GitHub](https://github.com/aoindustries/aorepo)
 
 ## Modules

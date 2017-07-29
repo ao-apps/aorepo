@@ -33,7 +33,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2017-07-23T16:50:08-0500"
-		dateUpdated="2017-07-28T22:29:33-0500"
+		dateModified="2017-07-28T22:47:29-0500"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child book="/parent" page="/index.jspx" />
@@ -54,7 +54,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><ao:a href="https://aorepo.org/centos/5/i686,x86_64/">CentOS 5 Repository</ao:a></li>
 				<li><ao:a href="https://aorepo.org/centos/7/x86_64/">CentOS 7 Repository</ao:a></li>
-				<li><ao:a href="https://aorepo.org/maven2">Maven Repository</ao:a></li>
+				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
 		</section:section>

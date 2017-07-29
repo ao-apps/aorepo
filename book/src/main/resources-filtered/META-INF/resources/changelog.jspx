@@ -51,7 +51,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 				version="#{version}"
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
-				repository="https://aorepo.org/maven2"
+				repository="https://aorepo.org/maven2/"
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
