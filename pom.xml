@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-aorepo - Aggregator POM for all AORepo packages.
+aorepo - Yum software repository of RPM packages supporting the AOServ Platform.
 Copyright (C) 2017  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
@@ -38,7 +38,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 
 	<name>AORepo</name>
 	<url>https://aorepo.org/</url>
-	<description>Aggregator POM for all AORepo packages.</description>
+	<description>Yum software repository of RPM packages supporting the AOServ Platform.</description>
 	<inceptionYear>2017</inceptionYear>
 
 	<scm>
