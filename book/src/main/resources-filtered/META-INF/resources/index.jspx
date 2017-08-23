@@ -35,8 +35,8 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 		datePublished="2017-07-23T16:50:08-0500"
 		dateModified="2017-07-28T22:47:29-0500"
 	>
-		<core:child page="changelog.jspx" />
-		<core:child book="/parent" page="/index.jspx" />
+		<core:child page="changelog" />
+		<core:child book="/parent" page="/" />
 		<ao:include
 			page="/ao-badges/badges.inc.jspx"
 			arg.projectStatus="${currentPage.property.projectStatus}"
@@ -50,8 +50,8 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 		</p>
 		<section:section label="Project Links">
 			<ul>
-				<li><core:link page="index.jspx">Project Home</core:link></li>
-				<li><core:link page="changelog.jspx">Changelog</core:link></li>
+				<li><core:link page="/">Project Home</core:link></li>
+				<li><core:link page="changelog">Changelog</core:link></li>
 				<li><ao:a href="https://aorepo.org/centos/5/i686,x86_64/">CentOS 5 Repository</ao:a></li>
 				<li><ao:a href="https://aorepo.org/centos/7/x86_64/">CentOS 7 Repository</ao:a></li>
 				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
@@ -60,7 +60,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 		</section:section>
 		<section:section label="Modules">
 			<ul>
-				<li><core:link book="/parent" page="/index.jspx" /></li>
+				<li><core:link book="/parent" page="/" /></li>
 			</ul>
 		</section:section>
 	</core:page>
