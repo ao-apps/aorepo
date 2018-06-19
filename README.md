@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [AORepo](https://aorepo.org/)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AORepo](https://github.com/aoindustries/aorepo)
 <p>
 	<a href="https://aoindustries.com/life-cycle#project-alpha">
 		<img src="https://aorepo.org/ao-badges/project-alpha.svg" alt="project: alpha" />
@@ -18,7 +18,7 @@
 	</a>
 </p>
 
-Aggregator POM for all [AORepo](https://aorepo.org/) packages.
+Aggregator POM for all [AORepo](https://github.com/aoindustries/aorepo) packages.
 
 ## Project Links
 * [Project Home](https://aorepo.org/)
@@ -29,7 +29,7 @@ Aggregator POM for all [AORepo](https://aorepo.org/) packages.
 * [GitHub](https://github.com/aoindustries/aorepo)
 
 ## Modules
-* [AORepo Parent](https://aorepo.org/parent/)
+* [AORepo Parent](https://github.com/aoindustries/aorepo-parent)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
