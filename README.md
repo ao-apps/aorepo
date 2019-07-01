@@ -18,15 +18,15 @@
 	</a>
 </p>
 
-Aggregator POM for all [AORepo](https://github.com/aoindustries/aorepo) packages.
+Yum software repository of RPM packages supporting the [AOServ Platform](https://aoindustries.com/aoserv/).
 
 ## Project Links
 * [Project Home](https://aorepo.org/)
 * [Changelog](https://aorepo.org/changelog)
 * [RHEL or CentOS Yum Repositories](https://aorepo.org/linux/)
-    * [Production](https://aorepo.org/linux/aorepo/)
-    * [Testing](https://aorepo.org/linux/testing/)
-    * [Staging](https://aorepo.org/linux/staging/)
+    * [AORepo](https://aorepo.org/linux/aorepo/)
+    * [AORepo Testing](https://aorepo.org/linux/testing/)
+    * [AORepo Staging](https://aorepo.org/linux/staging/)
 * [Maven Repository](https://aorepo.org/maven2/)
 * [GitHub](https://github.com/aoindustries/aorepo)
 

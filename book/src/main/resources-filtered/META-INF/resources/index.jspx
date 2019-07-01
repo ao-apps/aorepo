@@ -33,7 +33,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2017-07-23T16:50:08-0500"
-		dateModified="2019-06-30T22:49:05-0500"
+		dateModified="2019-06-30T23:20:05-0500"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child book="/parent" page="/index.jspx" />
@@ -56,9 +56,9 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><ao:a href="https://aorepo.org/linux/">RHEL or CentOS Yum Repositories</ao:a>
 					<ul>
-						<li><ao:a href="https://aorepo.org/linux/aorepo/">Production</ao:a></li>
-						<li><ao:a href="https://aorepo.org/linux/testing/">Testing</ao:a></li>
-						<li><ao:a href="https://aorepo.org/linux/staging/">Staging</ao:a></li>
+						<li><ao:a href="https://aorepo.org/linux/aorepo/">AORepo</ao:a></li>
+						<li><ao:a href="https://aorepo.org/linux/testing/">AORepo Testing</ao:a></li>
+						<li><ao:a href="https://aorepo.org/linux/staging/">AORepo Staging</ao:a></li>
 					</ul>
 				</li>
 				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
