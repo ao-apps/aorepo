@@ -23,14 +23,10 @@ Aggregator POM for all [AORepo](https://github.com/aoindustries/aorepo) packages
 ## Project Links
 * [Project Home](https://aorepo.org/)
 * [Changelog](https://aorepo.org/changelog)
-* [CentOS 5 Yum Repository](https://aorepo.org/centos/5/i686,x86_64/)
-    * [Staging](https://aorepo.org/centos/5/i686,x86_64/staging/)
-    * [Testing](https://aorepo.org/centos/5/i686,x86_64/testing/)
-    * [Production](https://aorepo.org/centos/5/i686,x86_64/production/)
-* [CentOS 7 Yum Repository](https://aorepo.org/centos/7/x86_64/)
-    * [Staging](https://aorepo.org/centos/7/x86_64/staging/)
-    * [Testing](https://aorepo.org/centos/7/x86_64/testing/)
-    * [Production](https://aorepo.org/centos/7/x86_64/production/)
+* [RHEL or CentOS Yum Repositories](https://aorepo.org/linux/)
+    * [Production](https://aorepo.org/linux/aorepo/)
+    * [Testing](https://aorepo.org/linux/testing/)
+    * [Staging](https://aorepo.org/linux/staging/)
 * [Maven Repository](https://aorepo.org/maven2/)
 * [GitHub](https://github.com/aoindustries/aorepo)
 
