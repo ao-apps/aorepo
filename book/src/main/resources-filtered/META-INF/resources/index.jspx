@@ -63,7 +63,7 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 					</ul>
 				</li>
 				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
-				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
+				<li><ao:a href="@{project.scm.url}">GitHub</ao:a></li>
 			</ul>
 		</section:nav>
 		<section:section label="Modules">
