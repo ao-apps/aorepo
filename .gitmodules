@@ -1,6 +1,8 @@
 [submodule "parent"]
 	path = parent
 	url = git@github.com:aoindustries/aorepo-parent
+	branch = master
 [submodule "website"]
 	path = website
 	url = git@github.com:aoindustries/aorepo-website
+	branch = master
