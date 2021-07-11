@@ -32,6 +32,13 @@ along with aorepo.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<properties>
+		<!-- SonarCloud.io -->
+		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
+		<sonar.organization>aoindustries</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
+
 	<name>AORepo</name>
 	<url>https://aorepo.org/</url>
 	<description>Yum software repository of RPM packages supporting the AOServ Platform.</description>
