@@ -37,7 +37,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T16:50:08-05:00"
-		dateModified="2021-10-28T02:26:31-05:00"
+		dateModified="2021-11-07T07:28:10-06:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -50,6 +50,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 			>
 				<ul>
 					<li>Require secure session cookies in production.</li>
+					<li>Repository URLs now defined in Maven properties to support continuous integration.</li>
 				</ul>
 			</changelog:release>
 		</c:if>

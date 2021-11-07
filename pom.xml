@@ -25,14 +25,17 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.17.3-POST-SNAPSHOT</version>
+		<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.17.4-SNAPSHOT</version>
 		<relativePath>parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.2.2-POST-SNAPSHOT</version>
+	<groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.2.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
+		<!-- Default Repository URLs -->
+		<aorepo-repository.url>https://aorepo.org/maven2/</aorepo-repository.url>
+
 		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>ao-apps</sonar.organization>
@@ -88,7 +91,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 		<!-- Repository required here, too, so can find parent -->
 		<repository>
 			<id>aorepo-repository</id>
-			<url>https://aorepo.org/maven2/</url>
+			<url>${aorepo-repository.url}</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
