@@ -29,7 +29,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 		<relativePath>parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.2.3-SNAPSHOT</version>
+	<groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.2.3</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -71,7 +71,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 		<connection>scm:git:git://github.com/ao-apps/aorepo.git</connection>
 		<developerConnection>scm:git:git@github.com:ao-apps/aorepo.git</developerConnection>
 		<url>https://github.com/ao-apps/aorepo</url>
-		<tag>HEAD</tag>
+		<tag>aorepo-0.2.3</tag>
 	</scm>
 
 	<issueManagement>
