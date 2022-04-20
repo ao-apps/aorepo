@@ -22,152 +22,152 @@ You should have received a copy of the GNU Lesser General Public License
 along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <jsp:root
-	xmlns:ao="https://oss.aoapps.com/taglib/"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:changelog="https://semanticcms.com/changelog/taglib/"
-	xmlns:core="https://semanticcms.com/core/taglib/"
-	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
-	xmlns:jsp="http://java.sun.com/JSP/Page"
-	version="2.1"
+  xmlns:ao="https://oss.aoapps.com/taglib/"
+  xmlns:c="http://java.sun.com/jsp/jstl/core"
+  xmlns:changelog="https://semanticcms.com/changelog/taglib/"
+  xmlns:core="https://semanticcms.com/core/taglib/"
+  xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  version="2.1"
 >
-	<jsp:directive.page language="java" pageEncoding="UTF-8" />
-	<jsp:directive.page session="false" />
-	<core:page
-		title="@{documented.name} Changelog"
-		shortTitle="Changelog"
-		tocLevels="1"
-		datePublished="2017-07-23T16:50:08-05:00"
-		dateModified="2022-04-14T21:16:36-05:00"
-	>
-		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
-			<changelog:release
-				projectName="@{documented.name}"
-				version="@{project.version}"
-				groupId="@{project.groupId}"
-				artifactId="@{documented.artifactId}"
-				repository="https://aorepo.org/maven2/"
-				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
-					<li>Updated dependencies.</li>
-					<li>
-						Limited the workaround for <ao:a href="https://bugs.openjdk.java.net/browse/JDK-8215291">JDK-8215291</ao:a>
-						to only builds in <code><![CDATA[JDK &lt; 12]]></code> with no <code>src/main/java/module-info.java</code>.
-						The previous mitigation was applied too broadly and broke the search URLs for projects with modules.
-					</li>
-					<li>Reduced size of Javadoc top section and fixed scroll position in Java 11.</li>
-					<li>
-						<p>
-							Enabled <ao:a href="https://checkstyle.org/">Checkstyle</ao:a> on all builds using
-							<ao:a href="https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html">Apache Maven Checkstyle Plugin</ao:a>.
-						</p>
-						<p>
-							The default style is based on <ao:a href="https://checkstyle.org/google_style.html">Google's Java Style Checkstyle</ao:a>,
-							but with the maximum line length increased to 120 characters.
-						</p>
-						<p>
-							By default, builds fail on Checkstyle error.  Each project that cannot immediately be adapted
-							to pass the analysis should configure the plugin with
-							<code><![CDATA[&lt;failOnViolation&gt;false&lt;/failOnViolation&gt;]]></code>.
-						</p>
-					</li>
-					<li>
-						<p>
-							Enabled <ao:a href="https://spotbugs.github.io/">SpotBugs</ao:a> on all builds using
-							<ao:a href="https://spotbugs.github.io/spotbugs-maven-plugin/index.html">SpotBugs Maven Plugin</ao:a>.
-						</p>
-						<p>
-							By default, builds fail on SpotBugs error.  Each project that cannot immediately be adapted
-							to pass the analysis should configure the plugin with
-							<code><![CDATA[&lt;failOnError&gt;false&lt;/failOnError&gt;]]></code>.
-						</p>
-					</li>
-				</ul>
-			</changelog:release>
-		</c:if>
+  <jsp:directive.page language="java" pageEncoding="UTF-8" />
+  <jsp:directive.page session="false" />
+  <core:page
+    title="@{documented.name} Changelog"
+    shortTitle="Changelog"
+    tocLevels="1"
+    datePublished="2017-07-23T16:50:08-05:00"
+    dateModified="2022-04-14T21:16:36-05:00"
+  >
+    <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
+      <changelog:release
+        projectName="@{documented.name}"
+        version="@{project.version}"
+        groupId="@{project.groupId}"
+        artifactId="@{documented.artifactId}"
+        repository="https://aorepo.org/maven2/"
+        scmUrl="@{project.scm.url}"
+      >
+        <ul>
+          <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
+          <li>Updated dependencies.</li>
+          <li>
+            Limited the workaround for <ao:a href="https://bugs.openjdk.java.net/browse/JDK-8215291">JDK-8215291</ao:a>
+            to only builds in <code><![CDATA[JDK &lt; 12]]></code> with no <code>src/main/java/module-info.java</code>.
+            The previous mitigation was applied too broadly and broke the search URLs for projects with modules.
+          </li>
+          <li>Reduced size of Javadoc top section and fixed scroll position in Java 11.</li>
+          <li>
+            <p>
+              Enabled <ao:a href="https://checkstyle.org/">Checkstyle</ao:a> on all builds using
+              <ao:a href="https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html">Apache Maven Checkstyle Plugin</ao:a>.
+            </p>
+            <p>
+              The default style is based on <ao:a href="https://checkstyle.org/google_style.html">Google's Java Style Checkstyle</ao:a>,
+              but with the maximum line length increased to 120 characters.
+            </p>
+            <p>
+              By default, builds fail on Checkstyle error.  Each project that cannot immediately be adapted
+              to pass the analysis should configure the plugin with
+              <code><![CDATA[&lt;failOnViolation&gt;false&lt;/failOnViolation&gt;]]></code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Enabled <ao:a href="https://spotbugs.github.io/">SpotBugs</ao:a> on all builds using
+              <ao:a href="https://spotbugs.github.io/spotbugs-maven-plugin/index.html">SpotBugs Maven Plugin</ao:a>.
+            </p>
+            <p>
+              By default, builds fail on SpotBugs error.  Each project that cannot immediately be adapted
+              to pass the analysis should configure the plugin with
+              <code><![CDATA[&lt;failOnError&gt;false&lt;/failOnError&gt;]]></code>.
+            </p>
+          </li>
+        </ul>
+      </changelog:release>
+    </c:if>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="0.2.3"
-			datePublished="2022-02-18T21:12:13-06:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2/"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Require secure session cookies in production.</li>
-				<li>
-					<ao:a href="https://stackoverflow.com/a/12598554/7121505">An alternate build directory (other than the
-					default <code>target</code>)</ao:a> may now be selected by providing an <code>alt.build.dir</code>
-					property.  We use this in continuous integration to be able to concurrently build a project for
-					multiple JDK versions, significantly reducing the build time.
-				</li>
-				<li>
-					<ao:a href="https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin">nexus-staging-maven-plugin</ao:a>
-					is now only enabled by a new <code>nexus</code> profile.  This is to support regular deployments
-					via <ao:a href="https://maven.apache.org/plugins/maven-deploy-plugin/">maven-deploy-plugin</ao:a>
-					in continuous integration.
-				</li>
-				<li>Added Jenkins continuous integration.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="0.2.3"
+      datePublished="2022-02-18T21:12:13-06:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      repository="https://aorepo.org/maven2/"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Require secure session cookies in production.</li>
+        <li>
+          <ao:a href="https://stackoverflow.com/a/12598554/7121505">An alternate build directory (other than the
+          default <code>target</code>)</ao:a> may now be selected by providing an <code>alt.build.dir</code>
+          property.  We use this in continuous integration to be able to concurrently build a project for
+          multiple JDK versions, significantly reducing the build time.
+        </li>
+        <li>
+          <ao:a href="https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin">nexus-staging-maven-plugin</ao:a>
+          is now only enabled by a new <code>nexus</code> profile.  This is to support regular deployments
+          via <ao:a href="https://maven.apache.org/plugins/maven-deploy-plugin/">maven-deploy-plugin</ao:a>
+          in continuous integration.
+        </li>
+        <li>Added Jenkins continuous integration.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="0.2.2"
-			datePublished="2021-10-19T22:13:03-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2/"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated dependencies.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="0.2.2"
+      datePublished="2021-10-19T22:13:03-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      repository="https://aorepo.org/maven2/"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated dependencies.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="0.2.1"
-			datePublished="2021-09-22T01:44:19-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2/"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="0.2.1"
+      datePublished="2021-09-22T01:44:19-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      repository="https://aorepo.org/maven2/"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="0.2.0"
-			datePublished="2021-07-26T03:08:21-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2/"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Updated version of <core:link book="/parent" page="/index.jspx" />.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="0.2.0"
+      datePublished="2021-07-26T03:08:21-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      repository="https://aorepo.org/maven2/"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Updated version of <core:link book="/parent" page="/index.jspx" />.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="0.1.0"
-			datePublished="2021-07-26T03:08:21-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			repository="https://aorepo.org/maven2/"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>New AORepo project.</li>
-			</ul>
-		</changelog:release>
-	</core:page>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="0.1.0"
+      datePublished="2021-07-26T03:08:21-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      repository="https://aorepo.org/maven2/"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>New AORepo project.</li>
+      </ul>
+    </changelog:release>
+  </core:page>
 </jsp:root>
