@@ -18,7 +18,7 @@ Yum software repository of RPM packages supporting the [AOServ Platform](https:/
 ## Project Links
 * [Project Home](https://aorepo.org/)
 * [Changelog](https://aorepo.org/changelog)
-* [RHEL or CentOS Yum Repositories](https://aorepo.org/linux/)
+* [Enterprise Linux Yum Repositories](https://aorepo.org/linux/)
     * [AORepo](https://aorepo.org/linux/aorepo/)
     * [AORepo Testing](https://aorepo.org/linux/testing/)
     * [AORepo Staging](https://aorepo.org/linux/staging/)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo - Yum software repository of RPM packages supporting the AOServ Platform.
-Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -34,7 +34,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2017-07-23T16:50:08-05:00"
-    dateModified="2021-07-16T03:48:08-05:00"
+    dateModified="2022-12-19T15:43:11-06:00"
   >
     <core:child page="changelog.jspx" />
     <core:child book="/parent" page="/index.jspx" />
@@ -64,7 +64,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
       <ul>
         <li><core:link page="index.jspx">Project Home</core:link></li>
         <li><core:link page="changelog.jspx">Changelog</core:link></li>
-        <li><ao:a href="https://aorepo.org/linux/">RHEL or CentOS Yum Repositories</ao:a>
+        <li><ao:a href="https://aorepo.org/linux/">Enterprise Linux Yum Repositories</ao:a>
           <ul>
             <li><ao:a href="https://aorepo.org/linux/aorepo/">AORepo</ao:a></li>
             <li><ao:a href="https://aorepo.org/linux/testing/">AORepo Testing</ao:a></li>
