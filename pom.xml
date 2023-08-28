@@ -32,9 +32,6 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
   <groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.4.0-POST-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <properties>
-  </properties>
-
   <name>AORepo</name>
   <url>https://aorepo.org/</url>
   <description>Yum software repository of RPM packages supporting the AOServ Platform.</description>
