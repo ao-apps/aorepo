@@ -32,6 +32,11 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
   <groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.4.0-POST-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <properties>
+    <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
+    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+  </properties>
+
   <name>AORepo</name>
   <url>https://aorepo.org/</url>
   <description>Yum software repository of RPM packages supporting the AOServ Platform.</description>
