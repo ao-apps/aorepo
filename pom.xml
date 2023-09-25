@@ -29,12 +29,12 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.5.0-SNAPSHOT</version>
+  <groupId>org.aorepo</groupId><artifactId>aorepo</artifactId><version>0.5.0</version>
   <packaging>pom</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-09-25T08:50:00Z</project.build.outputTimestamp>
   </properties>
 
   <name>AORepo</name>
@@ -69,7 +69,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/aorepo.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/aorepo.git</developerConnection>
     <url>https://github.com/ao-apps/aorepo</url>
-    <tag>HEAD</tag>
+    <tag>aorepo-0.5.0</tag>
   </scm>
 
   <issueManagement>
