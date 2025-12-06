@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo - Yum software repository of RPM packages supporting the AOServ Platform.
-Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2023, 2025  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -48,6 +48,7 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
         arg.license="lgpl-3.0"
         arg.scmUrl="@{project.scm.url}"
         arg.githubBuildWorkflow="Build"
+        arg.githubBuildFile="build.yml"
         arg.groupId="@{project.groupId}"
         arg.artifactId="@{documented.artifactId}"
         arg.sonarQualityGate="true"
