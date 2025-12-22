@@ -103,6 +103,10 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
     </repository>
   </repositories>
 
+  <modules>
+    <module>parent</module>
+  </modules>
+
   <profiles>
     <profile>
       <id>javaee</id>
@@ -119,8 +123,4 @@ along with aorepo.  If not, see <https://www.gnu.org/licenses/>.
       </modules>
     </profile>
   </profiles>
-
-  <modules>
-    <module>parent</module>
-  </modules>
 </project>
